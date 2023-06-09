@@ -1,18 +1,47 @@
-body{
-      background-image: url("background.png");
+@font-face {
+      font-family: OnlyFont;
+      src: url(font.ttf);
+}
+
+body {
       background-color: #EAE7D4;
-      background-size: cover;
-      background-position: 0px -5%;
-      background-repeat: no-repeat;
       color: #818171;
-      font-family: system-ui;
+      font-family: OnlyFont;
+      margin: 0;
 }
 
-h1{
-      font-size: 24pt;
+.background {
+      background-image: url("background.png");
+      background-size: 100% 100%;
+      background-position: 0px 40px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100%;
+      width: 100%;
+      position: absolute;
 }
 
-p{
+.top-bar {
+      display: flex;
+      align-items: center;
+      /* Zentriert vertikal */
+      justify-content: center;
+      /* Zentriert horizontal */
+      width: 100%;
+      height: calc(40px + 5%);
+}
+
+.content {
+      position: absolute;
+      width: 80%;
+      height: 80%;
+}
+
+h1 {
+      text-align: center;
+}
+
+p {
       padding: 0 12% 0 12%;
       font-size: 12pt;
       font-weight: bold;
