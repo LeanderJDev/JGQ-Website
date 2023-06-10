@@ -25,23 +25,20 @@ body {
       background-color: #EAE7D4;
       position: fixed;
       top: 0;
-      z-index: 1;
+      z-index: 20;
 }
 
 .columns {
       width: calc(100% - 190px);
-      height: calc(100% - 190px);
-      border: 80px solid transparent;
+      height: calc(100% - 190px - 20px);
+      border: 80px solid black;
       padding: 15px;
       border-image-source: url("wo-columns.png");
-      border-image-slice: 10% 12%;
-      /* background-size: 100% 100%;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-attachment: fixed; */
+      border-image-slice: 16% 12%;
       position: fixed;
       top: 0;
-      z-index: 0;
+      z-index: 10;
+      margin-top: 20px;
 }
 
 h1 {
@@ -63,11 +60,11 @@ p {
       font-weight: bold;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 480px) {
       .columns {
             border-image-source: url("columns.png");
-            height: calc(100% - 190px - 40px);
-            margin-top: 40px;
+            height: calc(100% - 190px - 60px);
+            margin-top: 60px;
       }
 
 
@@ -87,5 +84,20 @@ p {
             margin-top: 80px;
             width: calc(100% - 150px);
             height: 80%;
+      }
+}
+
+@media only screen and (max-height: 480px) {
+      .columns {
+            height: calc(100% - 190px - 40px);
+            margin-top: 40px;
+      }
+
+      .top-bar {
+            height: 70px;
+      }
+
+      h1 {
+            font-size: 1.8em;
       }
 }
