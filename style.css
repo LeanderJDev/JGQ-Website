@@ -8,41 +8,84 @@ body {
       color: #818171;
       font-family: OnlyFont;
       margin: 0;
-}
-
-.background {
       background-image: url("background.png");
-      background-size: 100% 100%;
-      background-position: 0px 40px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      height: 100%;
-      width: 100%;
-      position: absolute;
+      background-position: center;
+      background-size: 120%;
 }
 
 .top-bar {
-      display: flex;
+      /* display: flex; */
       align-items: center;
       /* Zentriert vertikal */
       justify-content: center;
       /* Zentriert horizontal */
       width: 100%;
-      height: calc(40px + 5%);
+      height: 50px;
+      margin: auto;
+      background-color: #EAE7D4;
+      position: fixed;
+      top: 0;
+      z-index: 1;
 }
 
-.content {
-      position: absolute;
-      width: 80%;
-      height: 80%;
+.columns {
+      width: calc(100% - 190px);
+      height: calc(100% - 190px);
+      border: 80px solid transparent;
+      padding: 15px;
+      border-image-source: url("wo-columns.png");
+      border-image-slice: 10% 12%;
+      /* background-size: 100% 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-attachment: fixed; */
+      position: fixed;
+      top: 0;
+      z-index: 0;
 }
 
 h1 {
       text-align: center;
+      font-size: 1.2em;
+      /* position: fixed; */
+}
+
+.content {
+      margin: auto;
+      padding: 20px;
+      margin-top: 40px;
+      text-align: center;
 }
 
 p {
-      padding: 0 12% 0 12%;
+      padding: 0;
       font-size: 12pt;
       font-weight: bold;
+}
+
+@media only screen and (min-width: 500px) {
+      .columns {
+            border-image-source: url("columns.png");
+            height: calc(100% - 190px - 40px);
+            margin-top: 40px;
+      }
+
+
+      .top-bar {
+            height: 90px;
+      }
+
+      body {
+            background-size: calc(120% - 120px);
+      }
+
+      h1 {
+            font-size: 2em;
+      }
+
+      .content {
+            margin-top: 80px;
+            width: calc(100% - 150px);
+            height: 80%;
+      }
 }
