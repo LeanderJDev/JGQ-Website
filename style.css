@@ -91,6 +91,41 @@ img{
       margin: -100px 0 0;
   }
 
+table{
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+}
+
+th{
+      padding-left: 5px;
+      font-style: italic;
+}
+
+tbody{
+      border: 2px solid;
+}
+
+td{
+      border:1px solid;
+      padding: 2px;
+      padding-left: 5px;
+}
+
+td:nth-child(2){
+      border-right: 2px solid;
+}
+
+a{
+      color: #d5b32b;
+      font-weight: bold;
+}
+
+a:visited{
+      color: #c5b395;
+      text-decoration-color: #eae7d4;
+}
+
 /* ------------------------------------------------------------ */
 
 @media only screen and (min-width: 480px) {
