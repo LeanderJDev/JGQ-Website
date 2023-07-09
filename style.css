@@ -138,7 +138,7 @@ td:nth-child(3){
 }
 
 a{
-      color: #d5b32b;
+      color: #cfab1d;
       font-weight: bold;
 }
 
@@ -152,7 +152,7 @@ h4{
 }
 
 b{
-      color: #d5b32b;
+      color: #cfab1d;
 }
 
 svg{
@@ -176,6 +176,13 @@ li:not(.level2){
 
 .Inhaltsverzeichnis{
       width:100%;
+}
+
+hr{
+      position: relative;
+      width: 300%;
+      margin-left:-75%;
+      color: #818171;
 }
 
 /* ------------------------------------------------------------ */
