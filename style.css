@@ -5,7 +5,6 @@
 
 html{
       scroll-behavior: smooth;
-      overflow: hidden;
 }
 
 body {
@@ -180,9 +179,9 @@ li:not(.level2){
 }
 
 hr{
-      position: relative;
-      width: 300%;
-      margin-left:-75%;
+      position: absolute;
+      width: calc(100vw - 20px);
+      left:0;
       color: #818171;
 }
 
