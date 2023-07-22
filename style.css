@@ -15,6 +15,7 @@ body {
       background-image: url("img/ui/background.png");
       background-position: center;
       background-size: 120%;
+      overflow-x: hidden;
 }
 
 .top-bar {
@@ -180,9 +181,30 @@ li:not(.level2){
 
 hr{
       position: absolute;
-      width: calc(100vw - 20px);
+      width: calc(100vw);
       left:0;
-      color: #818171;
+      border-top: 1px solid #e0ddc2;
+      border-bottom: 0.5px solid #818171;
+}
+
+.WhatsApp{
+      text-align: left;
+      padding: 1em;
+      padding-bottom:0.7em;
+      color: #D7D7D7;
+      border-radius: 0em 0.5em 0.5em 0.5em;
+      background-color: #363636;
+}
+.WhatsApp p{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: normal;
+      margin: 0;
+}
+.WhatsApp :last-child{
+      position:relative;
+      text-align: right;
+      font-size: 0.9em;
+      color: #818181;
 }
 
 /* ------------------------------------------------------------ */
