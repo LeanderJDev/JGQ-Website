@@ -8,6 +8,24 @@
       <title>Jahrgangsquartett Anleitung</title>
 
       <link href="style.css" rel="stylesheet" />
+
+      <!-- homemade analytics -->
+      <script>
+            fetch("https://massive-wholly-sponge.ngrok-free.app/analytics", {
+                  method: "post",
+                  headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        "ngrok-skip-browser-warning": "love",
+                  },
+
+                  body: JSON.stringify({
+                        width: screen.width,
+                        height: screen.height,
+                        timestamp: Date.now(),
+                  })
+            })
+      </script>
 </head>
 
 <body>
@@ -57,7 +75,7 @@
             <br>
             <h2 id="1Inhalt">1. Inhalt des Kartenspiels</h2>
             <p>97 Spielkarten, darunter<br>71 Schülerkarten<br>26 Lehrerkarten<br><br>2 Sonstige Karten:<br>ein
-                  wundervolles Deckblatt + der QR-Code zu dieser Website<br><br>ganz viel Liebe <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#c62a2a" stroke="#c62a2a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></p>
+                  wundervolles Deckblatt + der QR-Code zu dieser Website<br><br>ganz viel Liebe <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#c62a2a" stroke="#c62a2a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></p>
             <br>
             <h2 id="2Schuler">2. Schülerkarten</h2>
             <h3 id="21SchulerLayout">2.1. Layout</h3>
@@ -371,6 +389,7 @@
                         href="mailto:abi2023pmgbautzen@gmail.com">abi2023pmgbautzen@gmail.com</a>
                   und wir beantworten sie vielleicht (: Falls uns genug Leute mit ähnlichen Fragen nerven, findet man
                   die dann vielleicht auch gleich auf der Website.</p>
+            <br>
             <h2 id="6Danksagung">6. Danksagung</h2>
             <p>Vielen Dank an die vielen Menschen, ohne die das Jahrgangsquartett nicht möglich gewesen wäre. Aufgrund
                   des beschränkten Platzes, werden hier nur ein paar genannt.</p><br><br>
