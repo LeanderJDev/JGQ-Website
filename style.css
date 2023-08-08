@@ -16,6 +16,7 @@ body {
       background-position: center;
       background-size: 120%;
       overflow-x: hidden;
+      touch-action: pan-y;
 }
 
 .top-bar {
